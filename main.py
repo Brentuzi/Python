@@ -69,3 +69,14 @@ print(type(listseq))
 D = {'food': 'Apple', 'quantity': 4, 'color': 'Red'}
 D['food']
 D['quantity'] += 10
+
+#Вложенность хранения данных
+rec = {'name': {'firstname': 'Bob', 'lastname': 'Smith'},
+ 'job': ['dev', 'mgr'],
+ 'age': 25}
+
+print(rec['name']['firstname'], ' ',rec['name']['lastname'])
+print(rec['name']['firstname'])
+print(rec['job'])
+rec['job'].append('janitor')
+print(rec)
